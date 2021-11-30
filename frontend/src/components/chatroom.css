@@ -1,0 +1,82 @@
+.chat {
+  display: flex;
+  margin: 1rem;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgb(242, 245, 255) ;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.chat .room-name {
+  width: 100%;
+  text-align: start;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.chat .user-name h2 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 300;
+  /* padding-bottom: 1rem; */
+}
+
+.chat-message {
+  height: 30rem;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.container-fluid{
+  padding: 0px 0px 1rem 0px !important;
+}
+
+.chat-message .message {
+  /* padding-left: 0.5rem; */
+  max-width: 80%;
+}
+.chat-message .message p {
+  color: #181b24;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0px 10px 10px 10px;
+  padding: 1rem;
+}
+
+.chat-message .message p span {
+  color: #181a1f;
+  font-size: 0.6rem;
+  padding-left: 0.5rem;
+  font-weight: 200;
+}
+
+.chat-message .mess-right {
+  margin-right: 2px;
+  max-width: 80%;
+  margin-right: 2rem;
+}
+.chat-message .mess-right p {
+  background-color: rgb(43, 117, 214);
+  text-align: end;
+  color: white;
+  border-radius: 10px 0px 10px 10px;
+}
+.chat-message .mess-right p span {
+  padding-left: 0rem;
+  width: 100%;
+  padding-right: 0.5rem;
+  text-align: end;
+}
+
+.btn-chat {
+  width: 20%;
+}
+
+.input-group{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 95% !important;
+}

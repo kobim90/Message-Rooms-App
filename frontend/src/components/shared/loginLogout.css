@@ -1,0 +1,21 @@
+.btn-nav-l{
+    padding-right: 0 !important;
+}
+
+.btn-nav {
+    background-color: rgb(250, 251, 255) !important;
+    border: none !important;
+    color: var(--bs-blue) !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.btn-nav-r{
+    padding-left: 0 !important;
+}
+
+.no-radius{
+    border-radius: 0 !important;
+}

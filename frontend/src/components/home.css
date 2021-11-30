@@ -1,0 +1,66 @@
+.list-group-item {
+  border: none !important;
+  border-top: 2px solid rgb(250, 251, 255) !important;
+  border-bottom: 2px solid rgb(250, 251, 255) !important;
+  padding: 1.5rem 1rem !important;
+  margin-bottom: 1rem !important;
+  border-radius: 10px 10px 10px 10px !important;
+}
+
+.room-description {
+  color: rgb(180, 180, 180);
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  text-align: inherit;
+}
+
+.equal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  height: 100vh;
+}
+.main-wrapper {
+  background-color: rgb(234, 235, 241);
+  box-shadow: 0px 0px 7px 1px rgba(151, 133, 133, 0.17);
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(151, 133, 133, 0.17);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(151, 133, 133, 0.17);
+}
+
+.rooms{
+    display: flex !important;
+    flex-direction: row;
+}
+
+.room-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40px;
+    margin-right: 1rem;
+}
+
+.user-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.avatar{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
