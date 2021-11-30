@@ -1,7 +1,7 @@
 import axios from "axios";
 import authHeader from "./auth-header";
 
-const URL = "http://localhost:8080/user/";
+const URL = "https://rooms-message-app.herokuapp.com/user/";
 
 const getUser = async (username) => {
     const response = await axios.get(URL, {
