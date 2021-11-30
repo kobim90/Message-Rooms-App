@@ -11,21 +11,20 @@ const authJwt = require("./middlewares/authJwt")
 // dotenv.config();
 
 var corsOption = {
-  origin: "http://localhost:3000",
+  origin: "*",
 };
 
 app.use(cors(corsOption));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'views')));
 
 const db = require("./models");
 const Room = db.room;
 
-const uri = `mongodb+srv://${dbConfig.DB_USER}:${dbConfig.DB_PASSWORD}@kobiscluster.rvdyv.mongodb.net/${dbConfig.DB_NAME}?retryWrites=true&w=majority`;
-
 const connect = async () => {
   try {
-    await db.mongoose.connect(uri);
+    await db.mongoose.connect(process.env.CONNECTION);
 
     console.log("Successfully connect to MongoDB.");
     // initial();
@@ -65,9 +64,13 @@ const server = app.listen(PORT, () => {
 app.use("/auth", authRoutes);
 app.use("/user", userRoutes);
 
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'views', 'index.html'));
+})
+
 const io = socket(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "*",
   },
 });
 

@@ -1,7 +1,7 @@
 import axios from "axios";
 import authHeader from "./auth-header";
 
-const URL = "http://localhost:8080/auth/";
+const URL = "https://rooms-message-app.herokuapp.com/auth/";
 
 const register = async (username, email, password) => {
     console.log("services");

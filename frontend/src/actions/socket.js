@@ -3,7 +3,7 @@ import { SET_SOCKET } from "./type";
 import { io } from "socket.io-client";
 
 const setSocket = () => (dispatch) => {
-  const socket = io("http://localhost:8080", {
+  const socket = io("https://rooms-message-app.herokuapp.com/", {
     auth: {
       token: JSON.parse(localStorage.getItem("user")).accessToken,
     },
